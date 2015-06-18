@@ -370,12 +370,12 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <item>
-        <widget class="QGroupBox" name="installedGroup">
+        <widget class="QGroupBox" name="groupBox_5">
          <property name="title">
           <string>Installed docsets</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_4">
-          <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
            <widget class="QListView" name="installedDocsetList">
             <property name="iconSize">
              <size>
@@ -385,18 +385,8 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="0">
+          <item>
            <layout class="QHBoxLayout" name="docsetsActions">
-            <item>
-             <widget class="QPushButton" name="updateButton">
-              <property name="enabled">
-               <bool>false</bool>
-              </property>
-              <property name="text">
-               <string>Update docsets</string>
-              </property>
-             </widget>
-            </item>
             <item>
              <widget class="QPushButton" name="addFeedButton">
               <property name="text">
@@ -418,12 +408,32 @@
              </spacer>
             </item>
             <item>
-             <widget class="QPushButton" name="deleteButton">
+             <widget class="QPushButton" name="updateSelectedDocsetsButton">
               <property name="enabled">
                <bool>false</bool>
               </property>
               <property name="text">
-               <string>Delete</string>
+               <string>Update</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="updateAllDocsetsButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Update all</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="removeDocsetsButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Remove</string>
               </property>
              </widget>
             </item>
